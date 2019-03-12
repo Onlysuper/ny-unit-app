@@ -29,6 +29,11 @@
 		</view>
 	</view> -->
 	<view class="ny-page-space ny-index-page">
+		<view class="ny-tag-chose">
+		</view>
+		<view class="ny-top-search">
+			<mSearch :show="false" @search="search($event,1)"></mSearch>
+		</view>
 		<view class="ny-list-container">
 			<view class="ny-list-item">
 				<view class="ny-img-outer">
@@ -49,32 +54,36 @@
 </template>
 
 <script>
+	import mSearch from "@/components/mehaotian-search/mehaotian-search.vue"  
 	export default {
 		data() {
 			return {
-				background: ['color1', 'color2', 'color3'],
-				indicatorDots: true,
-				autoplay: true,
-				interval: 2000,
-				duration: 500
+            val1: ''
 			}
+		},
+		components: {  
+			mSearch  
 		},
 		onLoad() {
 
 		},
 		methods: {
-			changeIndicatorDots(e) {
-				this.indicatorDots = !this.indicatorDots
-			},
-			changeAutoplay(e) {
-				this.autoplay = !this.autoplay
-			},
-			intervalChange(e) {
-				this.interval = e.target.value
-			},
-			durationChange(e) {
-				this.duration = e.target.value
+			search(e, val) {
+				console.log(e, val);
+				this['val'+val] = e;
 			}
+// 			changeIndicatorDots(e) {
+// 				this.indicatorDots = !this.indicatorDots
+// 			},
+// 			changeAutoplay(e) {
+// 				this.autoplay = !this.autoplay
+// 			},
+// 			intervalChange(e) {
+// 				this.interval = e.target.value
+// 			},
+// 			durationChange(e) {
+// 				this.duration = e.target.value
+// 			}
 		}
 	}
 </script>
