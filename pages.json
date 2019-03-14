@@ -1,15 +1,48 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	    //首页 
 		{
-			"path": "pages/index/index",
+			"path": "pages/index/index", // 首页
 			"style": {
 				"navigationBarTitleText": "首页"
 			}
 		},
+		
+		{
+			"path": "pages/index/detail",// 详情页
+			"style": {
+				"navigationBarTitleText": "详情"
+			}
+		},
+		{
+			"path": "pages/index/comment",// 详情页评论列表
+			"style": {
+				"navigationBarTitleText": "评论"
+			}
+		},
+		{
+			"path": "pages/imglist/index", // 图版
+			"style": {
+				"navigationBarTitleText": "图板"
+			}
+		},
+		// 图片面板
+		{
+			"path": "pages/imgdetail/detail", // 图版
+			"style": {
+				"navigationBarTitleText": "图板"
+			}
+		},
+	
 		{
 			"path": "pages/first/index",
 			"style": {
-				"navigationBarTitleText": "第一次"
+				"navigationBarTitleText": "发布",
+				"app-plus": {  
+					"titleNView": {  
+						"type": "transparent"  
+					}  
+				}  
 			}
 		},
 		{
@@ -23,38 +56,75 @@
 			"style": {
 				"navigationBarTitleText": "宝宝"
 			}
+		},
+		{
+			"path": "pages/tabbar/tabbar-3/tabbar-3",
+			"style": {}
+		},
+		{
+			"path": "pages/tabbar-3-detial/tabbar-3-release/tabbar-3-release",
+			"style": {}
+		},
+		{
+			"path": "pages/tabbar-3-detial/tabbar-3-video/tabbar-3-video",
+			"style": {}
+		},
+		{
+			"path": "pages/tabbar-3-detial/tabbar-3-qa/tabbar-3-qa",
+			"style": {}
 		}
 	],
-// 	"subPackages": [{
-// 		 "pages": [{
-//             "path": "/baby/index"
-//         }]
-//     }],
 	"tabBar":{
 		"position":"bottom",
+		// "borderStyle": "black",
+		// "backgroundColor": "#333",
+		"color": "#8F8F94",
+		"selectedColor": "#f33e54",
 		 "list": [{
             "pagePath": "pages/index/index",
-           // "iconPath": "static/image/icon_component.png",
-            //"selectedIconPath": "static/image/icon_component_HL.png",
+			"iconPath": "static/img/tabbar/home.png",
+            "selectedIconPath": "static/img/tabbar/homeactive.png",
             "text": "首页"
         }, 
 		{
+		    "pagePath": "pages/imglist/index",
+		   "iconPath": "static/img/tabbar/guanzhu.png",
+		   "selectedIconPath": "static/img/tabbar/guanzhuactive.png",
+		    "text": "图板"
+		},
+		//#ifdef MP-WEIXIN
+		{
+			"pagePath": "pages/tabbar/tabbar-3/tabbar-3",
+			"iconPath": "static/img/tabbar/add.png",
+			"selectedIconPath": "static/img/tabbar/addactive.png",
+			"text": "发布"
+		},
+		//#endif
+		// #ifndef MP-WEIXIN
+		{
+			"pagePath": "pages/tabbar/tabbar-3/tabbar-3",
+			"iconPath": "static/img/tabbar/add.png",
+			"selectedIconPath": "static/img/tabbar/addactive.png"
+		},
+		//#endif
+		
+		{
 		    "pagePath": "pages/first/index",
-		    //"iconPath": "static/image/icon_API.png",
-		    //"selectedIconPath": "static/image/icon_API_HL.png",
-		    "text": "第一次"
+		    "iconPath": "static/img/tabbar/news.png",
+		    "selectedIconPath": "static/img/tabbar/newsactive.png",
+		    "text": "消息"
 		},
 		{
             "pagePath": "pages/user/index",
-            //"iconPath": "static/image/icon_API.png",
-            //"selectedIconPath": "static/image/icon_API_HL.png",
+           "iconPath": "static/img/tabbar/me.png",
+           "selectedIconPath": "static/img/tabbar/meactive.png",
             "text": "个人"
         }]
 	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarBackgroundColor": "#FFFFFF",
-		"backgroundColor": "#fbf9fe",
-		"navigationStyle":"custom"
+		"backgroundColor": "#fbf9fe"
+		//"navigationStyle":"custom"
 	}
 }

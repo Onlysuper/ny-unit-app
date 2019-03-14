@@ -1,60 +1,42 @@
 <template>
-	<!-- <view class="uni-padding-wrap bb-banner-back">
-		<view class="page-section swiper">
-			<view class="page-section-spacing">
-				<swiper class="swiper" :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval" :duration="duration">
-					<swiper-item>
-						<view class="swiper-item uni-bg-red">
-							<navigator url="/pages/baby/index">
-							 <image src="../../static/logo.png"></image>
-							</navigator>
-						</view>
-					</swiper-item>
-					<swiper-item>
-						<view class="swiper-item uni-bg-green">
-							<navigator url="/pages/baby/index">
-							 <image src="../../static/logo.png"></image>
-							</navigator>
-						</view>
-					</swiper-item>
-					<swiper-item>
-						<view class="swiper-item uni-bg-blue">
-							<navigator url="/pages/baby/index">
-							 <image src="../../static/logo.png"></image>
-							</navigator>
-						</view>
-					</swiper-item>
-				</swiper>
-			</view>
-		</view>
-	</view> -->
 	<view class="ny-page-space ny-index-page">
 		<view class="ny-tag-chose">
+			<!-- glance 滑动导航栏组件 -->
+			<TabBar
+				topfixedval='0px' 
+				:topfixed=true 
+				@clickitem="clickitem" 
+				:data = "[{textcontent:'关注'},
+						{textcontent:'发现'},
+						{textcontent:'附近'}]">
+			</TabBar>
 		</view>
 		<view class="ny-top-search">
 			<mSearch :show="false" @search="search($event,1)"></mSearch>
 		</view>
 		<view class="ny-list-container">
-			<view class="ny-list-item">
-				<view class="ny-img-outer">
-					
-				</view>
-				<view class="ny-text-outer">
-					<view class="ny-title">
-						今天天气怎么样
+			<navigator url="/pages/index/detail">
+				<view class="ny-list-item">
+					<view class="ny-img-outer">
 					</view>
-					<view class="ny-content">
-						今天天气怎么样今天天气怎么样今天天气怎么样今天天气怎么样今天天气怎么样今天天气怎么样
+					<view class="ny-text-outer">
+						<view class="ny-title">
+							今天天气怎么样
+						</view>
+						<view class="ny-content">
+							今天天气怎么样今天天气怎么样今天天气怎么样今天天气怎么样今天天气怎么样今天天气怎么样
+						</view>
 					</view>
+					<view class="bb-border-bottom"></view>
 				</view>
-				<view class="bb-border-bottom"></view>
-			</view>
+			</navigator>
 		</view>
 	</view>
 </template>
 
 <script>
-	import mSearch from "@/components/mehaotian-search/mehaotian-search.vue"  
+	import mSearch from "@/components/mehaotian-search/mehaotian-search.vue" 
+	import TabBar from "@/components/wxcomponents/glance-SlideNavTabBar/glance-SlideNavTabBar.vue" 
 	export default {
 		data() {
 			return {
@@ -62,7 +44,8 @@
 			}
 		},
 		components: {  
-			mSearch  
+			mSearch,
+			TabBar
 		},
 		onLoad() {
 
@@ -71,19 +54,11 @@
 			search(e, val) {
 				console.log(e, val);
 				this['val'+val] = e;
+			},
+			clickitem(obj){
+				console.log(obj)
 			}
-// 			changeIndicatorDots(e) {
-// 				this.indicatorDots = !this.indicatorDots
-// 			},
-// 			changeAutoplay(e) {
-// 				this.autoplay = !this.autoplay
-// 			},
-// 			intervalChange(e) {
-// 				this.interval = e.target.value
-// 			},
-// 			durationChange(e) {
-// 				this.duration = e.target.value
-// 			}
+
 		}
 	}
 </script>

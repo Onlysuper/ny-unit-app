@@ -1,5 +1,13 @@
+uni-page-body{
+	min-height: 100%;
+}
 .ny-page-space{
-	padding-top: 40rpx;
+	// padding-top: 40rpx;
+	padding-left: 30rpx;
+	padding-right: 30rpx;
+	min-height: 100%;
+}
+.ny-outer-space{
 	padding-left: 30rpx;
 	padding-right: 30rpx;
 }
@@ -13,3 +21,6 @@
 	left: 0;
 	right: 0;
 }
+
+
+
