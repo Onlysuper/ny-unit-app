@@ -20,13 +20,14 @@
 				"navigationBarTitleText": "评论"
 			}
 		},
+		// 图片面板
 		{
 			"path": "pages/imglist/index", // 图版
 			"style": {
 				"navigationBarTitleText": "图板"
 			}
 		},
-		// 图片面板
+		
 		{
 			"path": "pages/imgdetail/detail", // 图版
 			"style": {
@@ -35,14 +36,14 @@
 		},
 	
 		{
-			"path": "pages/first/index",
+			"path": "pages/message/index",
 			"style": {
-				"navigationBarTitleText": "发布",
-				"app-plus": {  
-					"titleNView": {  
-						"type": "transparent"  
-					}  
-				}  
+				"navigationBarTitleText": "消息"
+// 				"app-plus": {  
+// 					"titleNView": {  
+// 						"type": "transparent"  
+// 					}  
+// 				}  
 			}
 		},
 		{
@@ -59,7 +60,9 @@
 		},
 		{
 			"path": "pages/tabbar/tabbar-3/tabbar-3",
-			"style": {}
+			"style": {
+				"navigationBarTitleText": "发布"
+			}
 		},
 		{
 			"path": "pages/tabbar-3-detial/tabbar-3-release/tabbar-3-release",
@@ -109,7 +112,7 @@
 		//#endif
 		
 		{
-		    "pagePath": "pages/first/index",
+		    "pagePath": "pages/message/index",
 		    "iconPath": "static/img/tabbar/news.png",
 		    "selectedIconPath": "static/img/tabbar/newsactive.png",
 		    "text": "消息"
