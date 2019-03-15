@@ -2,16 +2,16 @@
 	<view class="ny-page-space ny-message-page">
 		<uni-list>
 			<uni-swipe-action  @click="deleteHandle" :options="options">
-				<uni-list-item title="标题文字" note="描述信息" thumb="http://img-cdn-qiniu.dcloud.net.cn/new-page/hx.png" show-badge="true" badge-text="12"></uni-list-item>
+				<uni-list-item :definedimg='true' title="标题文字" note="描述信息" thumb="http://img-cdn-qiniu.dcloud.net.cn/new-page/hx.png" show-badge="true" badge-text="12" badge-type="warning"></uni-list-item>
 			</uni-swipe-action>
 			<uni-swipe-action  @click="deleteHandle" :options="options">
-				<uni-list-item title="标题文字" note="描述信息" thumb="http://img-cdn-qiniu.dcloud.net.cn/new-page/hx.png"></uni-list-item>
+				<uni-list-item :definedimg='true' title="标题文字" note="描述信息" thumb="http://img-cdn-qiniu.dcloud.net.cn/new-page/hx.png"></uni-list-item>
 			</uni-swipe-action>
 			<uni-swipe-action  @click="deleteHandle" :options="options">
-				<uni-list-item title="标题文字" note="描述信息" thumb="http://img-cdn-qiniu.dcloud.net.cn/new-page/hx.png"></uni-list-item>
+				<uni-list-item :definedimg='true' title="标题文字" note="描述信息" thumb="http://img-cdn-qiniu.dcloud.net.cn/new-page/hx.png"></uni-list-item>
 			</uni-swipe-action>
 			<uni-swipe-action  @click="deleteHandle" :options="options">
-				<uni-list-item title="标题文字" note="描述信息" thumb="http://img-cdn-qiniu.dcloud.net.cn/new-page/hx.png"></uni-list-item></uni-list-item>
+				<uni-list-item :definedimg='true' title="标题文字" note="描述信息" thumb="http://img-cdn-qiniu.dcloud.net.cn/new-page/hx.png"></uni-list-item></uni-list-item>
 			</uni-swipe-action>
 		</uni-list>
 	</view>
@@ -47,9 +47,11 @@
 <style lang="scss">
 	@import "../../style/common.scss";
 	.ny-message-page{
+		
 		.ny-list-box{
 			width: 100%;
 			overflow: hidden;
 		}
+		
 	}
 </style>

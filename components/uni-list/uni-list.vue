@@ -9,12 +9,14 @@
 	}
 </script>
 <style lang="scss">
+	 @import "../../style/common.scss";
 	.uni-list {
 		background-color: $uni-bg-color;
 		position: relative;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
+		color:$second-text-color;
 
 		&:after {
 			position: absolute;

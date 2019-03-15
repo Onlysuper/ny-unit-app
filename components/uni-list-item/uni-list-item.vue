@@ -2,7 +2,7 @@
 	<view class="uni-list-cell" :class="[disabled === true || disabled === 'true' ? 'uni-list-cell--disabled' : '']"
 	 :hover-class="disabled === true || disabled === 'true' || showSwitch === true || showSwitch === 'true' ? '' : 'uni-list-cell--hover'" @click="onClick">
 		<view class="uni-list-cell__container">
-			<view class="uni-list-cell__icon" v-if="thumb">
+			<view :class="definedimg?'uni-list-cell__definedicon':'uni-list-cell__icon'" v-if="thumb">
 				<image class="uni-list-cell__icon-img" :src="thumb"></image>
 			</view>
 			<view class="uni-list-cell__icon" v-else-if="showExtraIcon === true || showExtraIcon === 'true'">
@@ -64,6 +64,7 @@
 				default: 'success'
 			},
 			thumb: String, //缩略图
+			definedimg:Boolean,
 			showExtraIcon: { //是否显示扩展图标
 				type: [Boolean, String],
 				default: false
@@ -177,17 +178,35 @@
 		}
 
 		&__icon {
+			border-radius: 100%;
+			overflow: hidden;
 			margin-right: 18upx;
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
 			align-items: center;
-
 			&-img {
 				height: $uni-img-size-base;
 				width: $uni-img-size-base;
 			}
 		}
+		&__definedicon {
+					background: #eee;
+					border-radius: 100%;
+					overflow: hidden;
+					margin-right: 18upx;
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					align-items: center;
+					width: 70rpx;
+					height: 70rpx;
+					.uni-list-cell__icon-img {
+						    border-radius: 100%;
+						height: 100%;
+						width: 100%;
+					}
+				}
 	}
 
 	.uni-list>.uni-list-cell:last-child .uni-list-cell-container:after {

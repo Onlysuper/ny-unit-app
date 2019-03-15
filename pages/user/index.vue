@@ -7,25 +7,39 @@
 					<view class="name">亲宝宝</view>
 					<view class="describe">快来完善一下个人信息吧</view>
 				</view>
+				<uni-icon color="#626466" type="arrowright" size="30"></uni-icon>
 				<view class="bb-border-bottom"></view>
 			</view>
 			<view class="ny-grid-group">
-				<view class="ny-grid-item">4.9w获赞</view>
-				<view class="ny-grid-item">100关注</view>
-				<view class="ny-grid-item">100w粉丝</view>
+				<view class="ny-grid-item">
+					<view class="ny-num">4.9w</view>
+					<view>获赞</view>
+				</view>
+				<view class="ny-grid-item">
+					<view class="ny-num">100</view>
+					<view>关注</view>
+				</view>
+				<view class="ny-grid-item">
+					<view class="ny-num">999w</view>
+					<view>粉丝</view>
+				</view>
 			</view>
 		</view>
-		<uni-list-item title="收藏" thumb="http://img-cdn-qiniu.dcloud.net.cn/new-page/hx.png"></uni-list-item></uni-list-item>
-		<uni-list-item title="设置" thumb="http://img-cdn-qiniu.dcloud.net.cn/new-page/hx.png"></uni-list-item></uni-list-item>
-		<uni-list-item title="关于" thumb="http://img-cdn-qiniu.dcloud.net.cn/new-page/hx.png"></uni-list-item></uni-list-item>
+		<uni-list-item class='ny-list' title="收藏"  show-extra-icon="true"  :extra-icon="{color: '#ee7a58',size: '22',type: 'starhalf'}" ></uni-list-item>
+		
+		<uni-list-item class='ny-list' title="设置" show-extra-icon="true"  :extra-icon="{color: '#85d5ab',size: '22',type: 'gear-filled'}"></uni-list-item>
+		
+		<uni-list-item class='ny-list' title="关于" show-extra-icon="true"  :extra-icon="{color: '#f7c655',size: '21',type: 'info-filled'}"></uni-list-item>
+		
 	</view>
 </template>
 
 <script>
 	import uniList from '@/components/uni-list/uni-list.vue'
 	import uniListItem from '@/components/uni-list-item/uni-list-item.vue'
+	import uniIcon from "@/components/uni-icon/uni-icon.vue"
 	export default {
-		components: {uniList,uniListItem},
+		components: {uniList,uniListItem,uniIcon},
 		data() {
 			return {
 				title: 'Hello'
@@ -44,40 +58,56 @@
 	 @import "../../style/common.scss";
 	.ny-user-page{
 		.ny-user-top{
-			padding-left:30rpx;
-			padding-right:30rpx;
 			.user-box{
-				height: 120rpx;
+				padding-left:30rpx;
+				padding-right:30rpx;
+				height: 160rpx;
 				display: flex;
 				flex-direction: row;
 				align-items: center;
 				position: relative;
+
 				.img-back{
-					flex: 0 0 100rpx;
+					flex: 0 0 120rpx;
 					background:#eee;
-					height: 100rpx;
+					height: 120rpx;
 					border-radius: 100%;
 				}
 				.user-context{
-					padding-left: 10rpx;
+					padding-left: 30rpx;
 					flex: 1;
 					.name{
-						font-size: 32rpx;
+						font-size: 42rpx;
+						color: $import-text-color;
 					}
 					.describe{
 						font-size: 22rpx;
+						color:$second-text-color;
 					}
 				}
 			}
 		}
 		.ny-grid-group{
+			padding-left:30rpx;
+			padding-right:30rpx;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 			height: 100rpx;
 			.ny-grid-item{
-				font-size: 30rpx;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				color: $second-text-color;
+				font-size: 34rpx;
+				.ny-num{
+					padding-right: 10rpx;
+				}
 			}
+		}
+		.ny-list{
+			color: $second-text-color
 		}
 	}
 </style>
