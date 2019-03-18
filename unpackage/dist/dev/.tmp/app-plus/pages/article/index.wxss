@@ -1,0 +1,613 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.serach.data-v-97b55928 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border-bottom: 1px #f5f5f5 solid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15rpx;
+  font-size: 28rpx;
+  background: #fff;
+}
+.serach .content.data-v-97b55928 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 60rpx;
+    border: 1px #ccc solid;
+    background: #fff;
+    overflow: hidden;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    border-radius: 30px;
+}
+.serach .content .content-box.data-v-97b55928 {
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+}
+.serach .content .content-box.center.data-v-97b55928 {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+}
+.serach .content .content-box .icon.data-v-97b55928 {
+        padding: 0 15rpx;
+}
+.serach .content .content-box .icon.icon-del.data-v-97b55928 {
+          font-size: 38rpx;
+}
+.serach .content .content-box .input.data-v-97b55928 {
+        width: 100%;
+        max-width: 100%;
+        line-height: 60rpx;
+        height: 60rpx;
+        -webkit-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+}
+.serach .content .content-box .input.center.data-v-97b55928 {
+          width: 200rpx;
+}
+.serach .content .content-box .input.sub.data-v-97b55928 {
+          width: auto;
+          color: grey;
+}
+.serach .content .serachBtn.data-v-97b55928 {
+      height: 100%;
+      -webkit-flex-shrink: 0;
+          -ms-flex-negative: 0;
+              flex-shrink: 0;
+      padding: 0 30rpx;
+      background: #4cd964;
+      line-height: 60rpx;
+      color: #fff;
+      border-left: 1px #ccc solid;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+}
+.serach .button.data-v-97b55928 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    width: 0;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.serach .button.active.data-v-97b55928 {
+      padding-left: 15rpx;
+      width: 100rpx;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url("//at.alicdn.com/t/font_989023_efq0mtli526.ttf") format("truetype");
+}
+.icon.data-v-97b55928 {
+  font-family: iconfont;
+  font-size: 32rpx;
+  font-style: normal;
+  color: #999;
+}
+
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.grace-tab {
+  padding: 0;
+}
+.grace-tab-title {
+  white-space: nowrap;
+  text-align: center;
+  background: #FFFFFF;
+}
+.grace-tab-title view {
+  width: auto;
+  padding: 0 12px;
+  margin: 0 8px;
+  line-height: 42px;
+  display: inline-block;
+  text-align: center;
+  border-bottom: 2px solid #FFFFFF;
+  font-size: 30rpx;
+}
+.grace-tab-title view:first-child {
+  margin-left: 0;
+}
+.grace-tab-title view:last-child {
+  margin-right: 0;
+}
+.grace-tab-current {
+  border-bottom: 4rpx solid #FF0036 !important;
+  color: #FF0036;
+}
+
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/*
+graceUI.wxss [ 收费UI框架，此处只包含一小部分使用到的 ]
+link : graceui.hcoder.net
+author : 5213606@qq.com 深海
+verson : 1.1.1
+*/
+/* 通用样式 */
+view {
+  font-size: 28rpx;
+}
+.grace-padding {
+  padding: 2%;
+  width: 96%;
+}
+.grace-common-bg {
+  background: #F8F8F8;
+}
+.grace-noborder {
+  border: 0 !important;
+}
+.grace-left-padding-wrap {
+  width: 96%;
+  padding: 12rpx 0;
+  padding-left: 4%;
+  overflow: hidden;
+  background: #FFFFFF;
+}
+.grace-left-padding-wrap .grace-list {
+  border-bottom: 1rpx solid #D1D1D1;
+  padding-left: 0;
+}
+.grace-left-padding-wrap .grace-list view text {
+  color: #666;
+  font-size: 28rpx;
+}
+/* 栅格布局 */
+.grace-flex {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+.grace-rows {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+  -webkit-flex-direction: row !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+}
+.grace-columns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+  -webkit-flex-direction: column !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+.grace-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.grace-nowrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap !important;
+      -ms-flex-wrap: nowrap !important;
+          flex-wrap: nowrap !important;
+}
+.grace-space-between {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify !important;
+  -webkit-justify-content: space-between !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+/* 新闻列表 */
+.grace-news-list {
+  padding: 12rpx 0;
+}
+.grace-news-list > navigator {
+  display: block;
+  width: 100%;
+  padding: 12rpx 0;
+  margin: 12rpx 0;
+}
+.grace-news-list-items {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  position: relative;
+}
+.grace-news-list-img {
+  width: 200rpx;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.grace-news-list-title {
+  width: 100%;
+  overflow: hidden;
+}
+.grace-news-list-title-main {
+  line-height: 1.5em;
+  font-size: 32rpx;
+  width: 100%;
+}
+.grace-news-list-title-desc {
+  font-size: 24rpx;
+  display: block;
+  color: #666;
+  margin-top: 12rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.grace-news-tips {
+  width: auto;
+  padding: 0 12rpx;
+  border-radius: 5rpx;
+  overflow: hidden;
+  background: #FF4343;
+  position: absolute;
+  top: 0;
+  color: #FFFFFF;
+  height: 36rpx;
+  line-height: 36rpx;
+  font-size: 20rpx;
+}
+.grace-news-tips-l {
+  left: 0;
+}
+.grace-news-tips-r {
+  right: 0;
+}
+.grace-news-list-info {
+  width: 100%;
+  margin-top: 10rpx;
+  line-height: 36rpx;
+  font-size: 24rpx;
+  color: #666;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.grace-news-list-info view {
+  font-size: 24rpx;
+  color: #666;
+}
+.grace-news-list-info text {
+  font-size: 24rpx;
+  color: #666;
+  margin-right: 10rpx;
+}
+.grace-news-list-img-news {
+  width: 100%;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.grace-news-list-imgs {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 18rpx 0;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.grace-news-list-imgs image {
+  width: 31.3%;
+  margin: 0 1%;
+}
+.grace-news-list-img-big {
+  width: 100%;
+  padding: 18rpx 0;
+}
+.grace-news-list-img-big image {
+  width: 100%;
+}
+/* 文章骨架结构 */
+.grace-skeleton {
+  padding: 5px 0;
+  background: #F1F2F3;
+  border-radius: 8px;
+}
+.grace-article-title {
+  margin: 8px 12px;
+  font-size: 26px;
+  line-height: 1.5em;
+  font-weight: 700;
+}
+.grace-article-author-line {
+  margin: 3px 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.grace-article-author {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+}
+.grace-article-author image {
+  width: 28px;
+  height: 28px;
+  border-radius: 100%;
+}
+.grace-article-author .author-name {
+  line-height: 28px;
+  padding-left: 5px;
+}
+.grace-article-author-line .btn {
+  display: inline-block;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 3px;
+  padding: 0 10px;
+  background: #00B26A;
+  color: #FFFFFF;
+}
+.grace-article-info-line {
+  margin: 8px 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.grace-article-info-line view {
+  color: #888;
+  line-height: 20px;
+  font-size: 12px;
+}
+.grace-article-contents {
+  margin: 10px 0;
+}
+.grace-article-contents .img-item {
+  width: 100%;
+}
+.grace-article-contents .img-item image {
+  width: 100%;
+}
+.grace-article-contents .text-item {
+  margin: 8px 12px;
+  line-height: 2.2em;
+  font-size: 16px;
+  color: #2F2F2F;
+}
+
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+uni-page-body {
+  min-height: 100%;
+}
+.ny-page-space {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  min-height: 100%;
+}
+.ny-outer-space {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.bb-border-bottom {
+  position: absolute;
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: #eee;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.ny-index-page {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.ny-index-page .ny-list-container .ny-list-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 30rpx 0;
+    position: relative;
+}
+.ny-index-page .ny-list-container .ny-list-item .ny-img-outer {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0  100rpx;
+          -ms-flex: 0 0  100rpx;
+              flex: 0 0  100rpx;
+      height: 100rpx;
+      background: #eee;
+}
+.ny-index-page .ny-list-container .ny-list-item .ny-text-outer {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      font-size: 32rpx;
+      padding-left: 30rpx;
+}
+

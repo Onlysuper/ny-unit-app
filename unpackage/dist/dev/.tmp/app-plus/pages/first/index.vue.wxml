@@ -1,1 +1,0 @@
-<template name="2be86dfe"><view class="_view 2be86dfe ny-page-space first-page"><view class="_view 2be86dfe">这里</view><button bindtap="handleProxy" data-eventid="{{'2be86dfe-0'}}" data-comkey="{{$k}}" class="_button 2be86dfe">选择图片</button></view></template>

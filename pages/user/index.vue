@@ -25,12 +25,11 @@
 				</view>
 			</view>
 		</view>
-		<uni-list-item class='ny-list' title="收藏"  show-extra-icon="true"  :extra-icon="{color: '#ee7a58',size: '22',type: 'starhalf'}" ></uni-list-item>
-		
-		<uni-list-item class='ny-list' title="设置" show-extra-icon="true"  :extra-icon="{color: '#85d5ab',size: '22',type: 'gear-filled'}"></uni-list-item>
-		
-		<uni-list-item class='ny-list' title="关于" show-extra-icon="true"  :extra-icon="{color: '#f7c655',size: '21',type: 'info-filled'}"></uni-list-item>
-		
+		<view class="ny-list-group">
+			<uni-list-item class='ny-list' title="收藏"  show-extra-icon="true"  thumb="http://img-cdn-qiniu.dcloud.net.cn/new-page/hx.png" ></uni-list-item>
+			<uni-list-item class='ny-list' title="设置" show-extra-icon="true"  thumb="http://img-cdn-qiniu.dcloud.net.cn/new-page/hx.png"></uni-list-item>
+			<uni-list-item class='ny-list' title="关于" show-extra-icon="true"  thumb="http://img-cdn-qiniu.dcloud.net.cn/new-page/hx.png"></uni-list-item>
+		</view>
 	</view>
 </template>
 
@@ -58,6 +57,7 @@
 	 @import "../../style/common.scss";
 	.ny-user-page{
 		.ny-user-top{
+			
 			.user-box{
 				padding-left:30rpx;
 				padding-right:30rpx;
@@ -106,8 +106,12 @@
 				}
 			}
 		}
-		.ny-list{
-			color: $second-text-color
+		.ny-list-group{
+			padding-left: 30rpx;
+			padding-right: 30rpx;
+			.ny-list{
+				color: $second-text-color
+			}
 		}
 	}
 </style>

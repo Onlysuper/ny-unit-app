@@ -1,31 +1,58 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/first/index",
+    "pages/article/index",
+    "pages/article/article-info/article-info",
+    "pages/imglist/index",
+    "pages/imgdetail/detail",
+    "pages/message/index",
     "pages/user/index",
-    "pages/baby/index"
+    "pages/baby/index",
+    "pages/release/index/index",
+    "pages/release/article/index",
+    "pages/release/video/index",
+    "pages/release/question/index"
   ],
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarBackgroundColor": "#FFFFFF",
-    "backgroundColor": "#fbf9fe",
-    "navigationStyle": "custom"
+    "backgroundColor": "#ffffff"
   },
   "usingComponents": {},
   "tabBar": {
     "position": "bottom",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "color": "#8F8F94",
+    "selectedColor": "#f33e54",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/article/index",
+        "iconPath": "static/img/tabbar/home.png",
+        "selectedIconPath": "static/img/tabbar/homeactive.png",
         "text": "首页"
       },
       {
-        "pagePath": "pages/first/index",
-        "text": "第一次"
+        "pagePath": "pages/imglist/index",
+        "iconPath": "static/img/tabbar/guanzhu.png",
+        "selectedIconPath": "static/img/tabbar/guanzhuactive.png",
+        "text": "图板"
+      },
+      {
+        "pagePath": "pages/release/index/index",
+        "iconPath": "static/img/tabbar/add.png",
+        "selectedIconPath": "static/img/tabbar/addactive.png"
+      },
+      {
+        "pagePath": "pages/message/index",
+        "iconPath": "static/img/tabbar/news.png",
+        "selectedIconPath": "static/img/tabbar/newsactive.png",
+        "text": "消息"
       },
       {
         "pagePath": "pages/user/index",
+        "iconPath": "static/img/tabbar/me.png",
+        "selectedIconPath": "static/img/tabbar/meactive.png",
         "text": "个人"
       }
     ]

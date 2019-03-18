@@ -1,2 +1,17 @@
-<import src="/components/mehaotian-search/mehaotian-search.vue.wxml" />
+<import src="/components/uni-list/uni-list.vue.wxml" />
+<import src="/components/uni-swipe-action/uni-swipe-action.vue.wxml" />
+<import src="/components/uni-list-item/uni-list-item.vue.wxml" />
+<import src="/components/ny-tap/index.vue.wxml" />
+<import src="/components/ny-search/search.vue.wxml" />
+<import src="/components/ny-articlelist/index.vue.wxml" />
+
+<template name="4895d755-default-4895d755-1"><template title="标题文字" note="描述信息" thumb="http://img-cdn-qiniu.dcloud.net.cn/new-page/hx.png" show-badge="true" badge-text="12" badge-type="warning" data="{{...$root['0'], ...$root[$kk+'4895d755-0'],$root}}" is="55511b2c"></template></template>
+
+<template name="4895d755-default-4895d755-3"><template title="标题文字" note="描述信息" thumb="http://img-cdn-qiniu.dcloud.net.cn/new-page/hx.png" data="{{...$root['0'], ...$root[$kk+'4895d755-2'],$root}}" is="55511b2c"></template></template>
+
+<template name="4895d755-default-4895d755-5"><template title="标题文字" note="描述信息" thumb="http://img-cdn-qiniu.dcloud.net.cn/new-page/hx.png" data="{{...$root['0'], ...$root[$kk+'4895d755-4'],$root}}" is="55511b2c"></template></template>
+
+<template name="4895d755-default-4895d755-7"><template title="标题文字" note="描述信息" thumb="http://img-cdn-qiniu.dcloud.net.cn/new-page/hx.png" data="{{...$root['0'], ...$root[$kk+'4895d755-6'],$root}}" is="55511b2c"></template></template>
+
+<template name="4895d755-default-4895d755-8"><template bindtap="handleProxy" data-eventid="{{'4895d755-0'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'4895d755-1'],$root, $slotdefault:'4895d755-default-4895d755-1'}}" is="5ba93d40"></template><template bindtap="handleProxy" data-eventid="{{'4895d755-1'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'4895d755-3'],$root, $slotdefault:'4895d755-default-4895d755-3'}}" is="5ba93d40"></template><template bindtap="handleProxy" data-eventid="{{'4895d755-2'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'4895d755-5'],$root, $slotdefault:'4895d755-default-4895d755-5'}}" is="5ba93d40"></template><template bindtap="handleProxy" data-eventid="{{'4895d755-3'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'4895d755-7'],$root, $slotdefault:'4895d755-default-4895d755-7'}}" is="5ba93d40"></template></template>
 

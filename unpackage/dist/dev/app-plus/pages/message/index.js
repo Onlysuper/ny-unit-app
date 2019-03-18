@@ -1,0 +1,13 @@
+
+      !(function(){
+        var uniAppViewReadyCallback = function(){
+          setCssToHead(["@charset \x22UTF-8\x22;\n.",[1],"uni-swipe-action { width: 100%; overflow: hidden }\n.",[1],"uni-swipe-action__container { background-color: #fff; width: 200%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap }\n.",[1],"uni-swipe-action__container.",[1],"animtion { -webkit-transition: -webkit-transform 350ms cubic-bezier(.165, .84, .44, 1); transition: -webkit-transform 350ms cubic-bezier(.165, .84, .44, 1); -o-transition: transform 350ms cubic-bezier(.165, .84, .44, 1); transition: transform 350ms cubic-bezier(.165, .84, .44, 1); transition: transform 350ms cubic-bezier(.165, .84, .44, 1), -webkit-transform 350ms cubic-bezier(.165, .84, .44, 1) }\n.",[1],"uni-swipe-action__content { width: 50% }\n.",[1],"uni-swipe-action__btn-group { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row }\n.",[1],"uni-swipe-action--btn { padding: 0 ",[0,32],"; color: #fff; background-color: #c7c6cd; font-size: ",[0,28],"; display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; text-align: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center }\n@charset \x22UTF-8\x22;\nwx-uni-page-body { min-height: 100%; }\n.",[1],"ny-page-space { padding-left: ",[0,30],"; padding-right: ",[0,30],"; min-height: 100%; }\n.",[1],"ny-outer-space { padding-left: ",[0,30],"; padding-right: ",[0,30],"; }\n.",[1],"bb-border-bottom { position: absolute; display: block; height: 1px; width: 100%; background: #eee; bottom: 0; left: 0; right: 0; }\n.",[1],"ny-message-page .",[1],"ny-list-box { width: 100%; overflow: hidden; }\n",],undefined,{path:"./pages/message/index.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/message/index.wxml') } }));
+        }
+        if(window.__uniAppViewReady__){
+          uniAppViewReadyCallback()
+        }else{
+          document.addEventListener('uniAppViewReady',uniAppViewReadyCallback)
+        }
+      })();
+      

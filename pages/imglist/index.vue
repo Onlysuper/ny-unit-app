@@ -76,6 +76,7 @@
 				uni.request({
 					url: this.$serverUrl + '/api/picture/posts.php?page=' + (this.refreshing ? 1 : this.fetchPageNum) + '&per_page=10',
 					success: (ret) => {
+						console.log(ret);
 						if (ret.statusCode !== 200) {
 							console.log("请求失败:", ret)
 						} else {

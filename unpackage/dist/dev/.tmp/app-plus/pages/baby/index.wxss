@@ -24,8 +24,15 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+uni-page-body {
+  min-height: 100%;
+}
 .ny-page-space {
-  padding-top: 40rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  min-height: 100%;
+}
+.ny-outer-space {
   padding-left: 30rpx;
   padding-right: 30rpx;
 }

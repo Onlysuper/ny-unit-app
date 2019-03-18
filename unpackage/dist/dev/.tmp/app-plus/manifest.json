@@ -76,7 +76,7 @@
     },
     "allowsInlineMediaPlayback": true,
     "safearea": {
-      "background": "#FFFFFF",
+      "background": "#ffffff",
       "bottom": {
         "offset": "auto"
       }
