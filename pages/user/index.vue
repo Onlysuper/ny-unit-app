@@ -59,56 +59,56 @@
 		.ny-user-top{
 			
 			.user-box{
-				padding-left:30rpx;
-				padding-right:30rpx;
-				height: 160rpx;
+				padding-left:30upx;
+				padding-right:30upx;
+				height: 160upx;
 				display: flex;
 				flex-direction: row;
 				align-items: center;
 				position: relative;
 
 				.img-back{
-					flex: 0 0 120rpx;
+					flex: 0 0 120upx;
 					background:#eee;
-					height: 120rpx;
+					height: 120upx;
 					border-radius: 100%;
 				}
 				.user-context{
-					padding-left: 30rpx;
+					padding-left: 30upx;
 					flex: 1;
 					.name{
-						font-size: 42rpx;
+						font-size: 42upx;
 						color: $import-text-color;
 					}
 					.describe{
-						font-size: 22rpx;
+						font-size: 22upx;
 						color:$second-text-color;
 					}
 				}
 			}
 		}
 		.ny-grid-group{
-			padding-left:30rpx;
-			padding-right:30rpx;
+			padding-left:30upx;
+			padding-right:30upx;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			height: 100rpx;
+			height: 100upx;
 			.ny-grid-item{
 				display: flex;
 				flex-direction: row;
 				justify-content: center;
 				align-items: center;
 				color: $second-text-color;
-				font-size: 34rpx;
+				font-size: 34upx;
 				.ny-num{
-					padding-right: 10rpx;
+					padding-right: 10upx;
 				}
 			}
 		}
 		.ny-list-group{
-			padding-left: 30rpx;
-			padding-right: 30rpx;
+			padding-left: 30upx;
+			padding-right: 30upx;
 			.ny-list{
 				color: $second-text-color
 			}

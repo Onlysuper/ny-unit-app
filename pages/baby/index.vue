@@ -23,27 +23,27 @@
 <style lang="scss">
 	 @import "../../style/common.scss";
 	.user-page{
-		padding: 0 30rpx;
+		padding: 0 30upx;
 		.user-box{
-			height: 120rpx;
+			height: 120upx;
 			display: flex;
 			flex-direction: row;
 			align-items: center;
 			position: relative;
 			.img-back{
-				flex: 0 0 100rpx;
+				flex: 0 0 100upx;
 				background:#eee;
-				height: 100rpx;
+				height: 100upx;
 				border-radius: 100%;
 			}
 			.user-context{
-				padding-left: 10rpx;
+				padding-left: 10upx;
 				flex: 1;
 				.name{
-					font-size: 32rpx;
+					font-size: 32upx;
 				}
 				.describe{
-					font-size: 22rpx;
+					font-size: 22upx;
 				}
 			}
 		}

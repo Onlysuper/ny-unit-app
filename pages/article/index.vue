@@ -96,24 +96,24 @@ export default{
 <style lang="scss">
 	@import "../../style/common.scss";
 	.ny-index-page{
-		padding-left:  30rpx;
-		padding-right:  30rpx;
+		padding-left:  30upx;
+		padding-right:  30upx;
 		.ny-list-container{
 			.ny-list-item{
 				display: flex;
 				flex-direction: row;
 				align-items: center;
-				padding: 30rpx 0;
+				padding: 30upx 0;
 				position: relative;
 				.ny-img-outer{
-					flex:0 0  100rpx;
-					height: 100rpx;
+					flex:0 0  100upx;
+					height: 100upx;
 					background:#eee;
 				}
 				.ny-text-outer{
 					flex: 1;
-					font-size: 32rpx;
-					padding-left: 30rpx;
+					font-size: 32upx;
+					padding-left: 30upx;
 				}
 			}
 		}

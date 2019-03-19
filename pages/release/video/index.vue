@@ -6,7 +6,7 @@
 				 <textarea placeholder="说点什么吧" @blur="bindTextAreaBlur" auto-height />
 			</view>
 			<view class="ny-picture">
-				<sunsin-upimg ref="upimg" url="https://xxx" :count="6" :autoup="false" @onUpImg="upImgData" />
+				<ny-upimg ref="upimg" url="https://xxx" :count="6" :autoup="false" @onUpImg="upImgData" />
 			</view>
 		</view>
 		<view class="ny-list-group">
@@ -20,7 +20,7 @@
 
 <script>
 	import uniTag from "@/components/uni-tag/uni-tag.vue"
-	import sunsinUpimg from '@/components/sunsin-upimg/sunsin-upimg.vue'
+	import nyUpimg from '@/components/ny-upimg/ny-upimg.vue'
 	import uniListItem from '@/components/uni-list-item/uni-list-item.vue'
 	export default {
 		data() {
@@ -29,7 +29,7 @@
 			}
 		},
 		components: {
-			sunsinUpimg,
+			nyUpimg,
 			uniListItem,
 			uniTag
 		},
@@ -64,12 +64,12 @@
 <style lang="scss">
 	.ny-imgtext-page{
 		.ny-main{
-			padding-right: 30rpx;
-			padding-left: 30rpx;
+			padding-right: 30upx;
+			padding-left: 30upx;
 		}
 		.ny-list-group{
-			padding-right: 30rpx;
-			padding-left: 30rpx;
+			padding-right: 30upx;
+			padding-left: 30upx;
 		}
 		.ny-picture{
 			

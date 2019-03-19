@@ -62,7 +62,7 @@
 			}
 		}
 		.ny-footer{
-			flex: 0 0 100rpx;
+			flex: 0 0 100upx;
 			background:#eee;
 			display: flex;
 			flex-direction: row;
