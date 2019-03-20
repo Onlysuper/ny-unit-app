@@ -3,10 +3,12 @@ $second-text-color:#484e54;
 $third-text-color:#626466;
 $normal-text-color:#939393;
 $main-background:#f6f6f6; // 大背景颜色
+
 @mixin ny-flex-row($dir){
 	display:flex;
 	flex-direction:$dir
 }
+
 @mixin ny-padding-side(){
 	padding-left: 30upx;
 	padding-right: 30upx;
@@ -14,16 +16,7 @@ $main-background:#f6f6f6; // 大背景颜色
 .uni-page-body{
 	min-height: 100%;
 }
-.ny-page-space{
-	// padding-top: 40upx;
-	padding-left: 30upx;
-	padding-right: 30upx;
-	min-height: 100%;
-}
-.ny-outer-space{
-	padding-left: 30upx;
-	padding-right: 30upx;
-}
+// 底部半像素线
 .bb-border-bottom{
 	position: absolute;
 	display: block;

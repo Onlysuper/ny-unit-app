@@ -1,5 +1,5 @@
 <template>
-	<view class="ny-page-space ny-message-page">
+	<view class="ny-message-page">
 		<uni-list>
 			<uni-swipe-action  @click="deleteHandle" :options="options">
 				<uni-list-item :definedimg='true' title="标题文字" note="描述信息" thumb="http://img-cdn-qiniu.dcloud.net.cn/new-page/hx.png" show-badge="true" badge-text="12" badge-type="warning"></uni-list-item>
@@ -47,7 +47,7 @@
 <style lang="scss">
 	@import "../../style/common.scss";
 	.ny-message-page{
-		
+		 @include ny-padding-side();
 		.ny-list-box{
 			width: 100%;
 			overflow: hidden;

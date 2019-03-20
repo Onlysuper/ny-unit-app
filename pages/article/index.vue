@@ -1,5 +1,5 @@
 <template>
-	<view class="ny-page-space ny-index-page">
+	<view class="ny-index-page">
 		<nyTap @tabChange="tabChange" :typegories="typegories" :top="top" :currentIndex="0"></nyTap>
 		<nySearch :show="false" @search="search($event,1)"></nySearch>
 		<nyArticlelist :list="artList"></nyArticlelist>
@@ -96,8 +96,7 @@ export default{
 <style lang="scss">
 	@import "../../style/common.scss";
 	.ny-index-page{
-		padding-left:  30upx;
-		padding-right:  30upx;
+	 	@include ny-padding-side();
 		.ny-list-container{
 			.ny-list-item{
 				display: flex;

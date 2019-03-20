@@ -1,6 +1,6 @@
 <template>
 	<view class="ny-detail-page">
-		<view class="ny-outer-space ny-main">
+		<view class="ny-main">
 			<view class="ny-title">一到这个季节就容易犯困</view>
 			<view class="ny-imgbox">
 				 <image src="../../static/logo.png"></image>
@@ -9,7 +9,7 @@
 				一到这个季节就容易犯困一到这个季节就容易犯困一到这个季节就容易犯困一到这个季节就容易犯困一到这个季节就容易犯困
 			</view>
 		</view>
-		<view class="ny-outer-space ny-footer">
+		<view class="ny-footer">
 			<view>
 				 <input class="uni-input" focus placeholder="自动获得焦点" />
 			</view>
@@ -53,6 +53,7 @@
 		display: flex;
 		flex-direction: column;
 		.ny-main{
+			 @include ny-padding-side();
 			flex: 1;
 			.ny-imgbox{
 				flex:1;
@@ -62,6 +63,7 @@
 			}
 		}
 		.ny-footer{
+			 @include ny-padding-side();
 			flex: 0 0 100upx;
 			background:#eee;
 			display: flex;

@@ -112,20 +112,28 @@
 			 flex-direction: row;
 			 .ny-user-img{
 				 flex: 0 0 120upx;
+				 height:120upx;
+				 .img-back{
+					 width: 100%;
+					 height: 100%;
+					 background: #eee;
+				 }
 			 }
 			 .ny-harvest{
 				 @include ny-flex-row(row);
+				 
 				 flex: 1;
 				 .ny-item{
 					 padding: 10upx;
+					 font-size: 22upx;
 				 }
 			 }
 		 } 
 		 .ny-main{
-		 				  @include ny-padding-side();
-		 				 .ny-list{
-		 					 
-		 				 }
+			 @include ny-padding-side();
+			 .ny-list{
+				 font-size: 22upx;
+			 }
 		 }
 	 }
 </style>
