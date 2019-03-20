@@ -3,7 +3,15 @@ $second-text-color:#484e54;
 $third-text-color:#626466;
 $normal-text-color:#939393;
 $main-background:#f6f6f6; // 大背景颜色
-uni-page-body{
+@mixin ny-flex-row($dir){
+	display:flex;
+	flex-direction:$dir
+}
+@mixin ny-padding-side(){
+	padding-left: 30upx;
+	padding-right: 30upx;
+}
+.uni-page-body{
 	min-height: 100%;
 }
 .ny-page-space{
